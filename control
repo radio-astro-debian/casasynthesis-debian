@@ -1,0 +1,19 @@
+Source: casasynthesis
+Priority: optional
+Maintainer: Gijs Molenaar <Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>>
+Build-Depends: debhelper (>= 8.0.0), cmake, libcasacore2-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: https://github.com/radio-astro/casasynthesis
+
+Package: casasynthesis-dev
+Section: libdevel
+Architecture: any
+Depends: casasynthesis1 (= ${binary:Version})
+Description: The synthesis CASA 4.4 submodule as a standalone project
+
+Package: casasynthesis1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The synthesis CASA 4.4 submodule as a standalone project
